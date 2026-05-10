@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departments | Carmel Hospital</title>
+    <link rel="stylesheet" href="style.css?v=1.1">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Global Loader -->
+    <div id="global-loader" class="global-loader">
+        <div class="loader-content">
+            <img src="assets/landing/main_logo-1-scaled.png" alt="Carmel Hospital Logo">
+        </div>
+    </div>
+    <script>
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const loader = document.getElementById('global-loader');
+                if (loader) {
+                    loader.style.opacity = '0';
+                    setTimeout(() => loader.style.display = 'none', 500);
+                }
+            }, 500);
+        });
+    </script>
+
+    <!-- Liquid Glass Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/landing/main_logo-1-scaled.png" alt="Carmel Hospital" class="nav-logo-img"> Carmel Hospital
+            </a>
+            <div class="nav-links">
+                <a href="index.html#home">Home</a>
+                <a href="about.html">About</a>
+                <a href="#" style="border-bottom: 2px solid var(--secondary-color);">Departments</a>
+                <a href="services.html">Services</a>
+                <a href="doctor.html">Doctors</a>
+                <a href="index.html#emergency" class="btn-primary btn-nav">Emergency</a>
+            </div>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html#home">Home</a>
+        <a href="about.html">About</a>
+        <a href="#">Departments</a>
+        <a href="services.html">Services</a>
+        <a href="doctor.html">Doctors</a>
+        <a href="index.html#emergency" class="btn-primary">Emergency</a>
+    </div>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <h1>Our Departments</h1>
+        <p>Comprehensive medical services covering all major specialties with state-of-the-art facilities.</p>
+    </header>
+
+    <!-- Departments Content -->
+    <section class="dept-container">
+        
+        <!-- Clinical Departments -->
+        <div class="dept-category fade-up">
+            <h2 id="clinical" class="dept-category-title"><i class="fa-solid fa-stethoscope"></i> Clinical Departments</h2>
+            <div class="dept-grid">
+                <div class="dept-card" onclick="window.location.href='department-profile.html?id=emergency-medicine'" style="cursor: pointer;">
+                    <div class="dept-icon"><i class="fa-solid fa-truck-medical"></i></div>
+                    <div class="dept-info"><h3>Emergency Medicine</h3></div>
+                </div>
+                <div class="dept-card" onclick="window.location.href='department-profile.html?id=cardiology'" style="cursor: pointer;">
+                    <div class="dept-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                    <div class="dept-info"><h3>Cardiology</h3></div>
+                </div>
+                <div class="dept-card" onclick="window.location.href='department-profile.html?id=gynaecology'" style="cursor: pointer;">
+                    <div class="dept-icon"><i class="fa-solid fa-person-pregnant"></i></div>
+                    <div class="dept-info"><h3>Gynaecology</h3></div>
+                </div>
+                <div class="dept-card" onclick="window.location.href='department-profile.html?id=orthopaedics'" style="cursor: pointer;">
+                    <div class="dept-icon"><i class="fa-solid fa-bone"></i></div>
+                    <div class="dept-info"><h3>Orthopaedics</h3></div>
+                </div>
+                <div class="dept-card" onclick="window.location.href='department-profile.html?id=paediatrics'" style="cursor: pointer;">
+                    <div class="dept-icon"><i class="fa-solid fa-baby"></i></div>
+                    <div class="dept-info"><h3>Paediatrics</h3></div>
+                </div>
+                <div class="dept-card" onclick="window.location.href='department-profile.html?id=general-medicine'" style="cursor: pointer;">
+                    <div class="dept-icon"><i class="fa-solid fa-stethoscope"></i></div>
+                    <div class="dept-info"><h3>General Medicine</h3></div>
+                </div>
+                <div class="dept-card" onclick="window.location.href='department-profile.html?id=general-surgery'" style="cursor: pointer;">
+                    <div class="dept-icon"><i class="fa-solid fa-scalpel"></i></div>
+                    <div class="dept-info"><h3>General Surgery</h3></div>
+                </div>
+                <div class="dept-card" onclick="window.location.href='department-profile.html?id=ophthalmology'" style="cursor: pointer;">
+                    <div class="dept-icon"><i class="fa-solid fa-eye"></i></div>
+                    <div class="dept-info"><h3>Ophthalmology</h3></div>
+                </div>
+                <div class="dept-card" onclick="window.location.href='department-profile.html?id=ent'" style="cursor: pointer;">
+                    <div class="dept-icon"><i class="fa-solid fa-ear-listen"></i></div>
+                    <div class="dept-info"><h3>ENT</h3></div>
+                </div>
+                <div class="dept-card" onclick="window.location.href='department-profile.html?id=dental'" style="cursor: pointer;">
+                    <div class="dept-icon"><i class="fa-solid fa-tooth"></i></div>
+                    <div class="dept-info"><h3>Dental</h3></div>
+                </div>
+                <div class="dept-card" onclick="window.location.href='department-profile.html?id=dermatology'" style="cursor: pointer;">
+                    <div class="dept-icon"><i class="fa-solid fa-hands-bubbles"></i></div>
+                    <div class="dept-info"><h3>Dermatology</h3></div>
+                </div>
+                <div class="dept-card" onclick="window.location.href='department-profile.html?id=clinical-psychology'" style="cursor: pointer;">
+                    <div class="dept-icon"><i class="fa-solid fa-brain"></i></div>
+                    <div class="dept-info"><h3>Clinical Psychology</h3></div>
+                </div>
+                <div class="dept-card" onclick="window.location.href='department-profile.html?id=psychiatry'" style="cursor: pointer;">
+                    <div class="dept-icon"><i class="fa-solid fa-head-side-virus"></i></div>
+                    <div class="dept-info"><h3>Psychiatry</h3></div>
+                </div>
+                <div class="dept-card" onclick="window.location.href='department-profile.html?id=nephrology-dialysis'" style="cursor: pointer;">
+                    <div class="dept-icon"><i class="fa-solid fa-droplet"></i></div>
+                    <div class="dept-info"><h3>Nephrology & Dialysis</h3></div>
+                </div>
+                <div class="dept-card" onclick="window.location.href='department-profile.html?id=anaesthesia'" style="cursor: pointer;">
+                    <div class="dept-icon"><i class="fa-solid fa-mask-ventilator"></i></div>
+                    <div class="dept-info"><h3>Anaesthesia</h3></div>
+                </div>
+                <div class="dept-card" onclick="window.location.href='department-profile.html?id=laparoscopic-surgery'" style="cursor: pointer;">
+                    <div class="dept-icon"><i class="fa-solid fa-display"></i></div>
+                    <div class="dept-info"><h3>Laparoscopic Surgery</h3></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Intensive Care Units -->
+        <div class="dept-category fade-up">
+            <h2 id="icu" class="dept-category-title"><i class="fa-solid fa-bed-pulse"></i> Intensive Care Units</h2>
+            <div class="dept-grid">
+                <div class="dept-card" onclick="window.location.href='department-profile.html?id=sicu'" style="cursor: pointer;">
+                    <div class="dept-icon"><i class="fa-solid fa-bed-pulse"></i></div>
+                    <div class="dept-info"><h3>SICU</h3><p>Surgical Intensive Care Unit</p></div>
+                </div>
+                <div class="dept-card" onclick="window.location.href='department-profile.html?id=micu'" style="cursor: pointer;">
+                    <div class="dept-icon"><i class="fa-solid fa-bed"></i></div>
+                    <div class="dept-info"><h3>MICU</h3><p>Medical Intensive Care Unit</p></div>
+                </div>
+                <div class="dept-card" onclick="window.location.href='department-profile.html?id=ccu'" style="cursor: pointer;">
+                    <div class="dept-icon"><i class="fa-solid fa-heart-circle-check"></i></div>
+                    <div class="dept-info"><h3>CCU</h3><p>Coronary Care Unit</p></div>
+                </div>
+                <div class="dept-card" onclick="window.location.href='department-profile.html?id=nicu'" style="cursor: pointer;">
+                    <div class="dept-icon"><i class="fa-solid fa-baby-carriage"></i></div>
+                    <div class="dept-info"><h3>NICU</h3><p>Neonatal Intensive Care Unit</p></div>
+                </div>
+                <div class="dept-card" onclick="window.location.href='department-profile.html?id=picu'" style="cursor: pointer;">
+                    <div class="dept-icon"><i class="fa-solid fa-child-reaching"></i></div>
+                    <div class="dept-info"><h3>PICU</h3><p>Pediatric Intensive Care Unit</p></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Paramedical Departments -->
+        <div class="dept-category fade-up">
+            <h2 id="paramedical" class="dept-category-title"><i class="fa-solid fa-flask"></i> Paramedical Departments</h2>
+            <div class="dept-grid">
+                <div class="dept-card" onclick="window.location.href='department-profile.html?id=pharmacy'" style="cursor: pointer;">
+                    <div class="dept-icon"><i class="fa-solid fa-pills"></i></div>
+                    <div class="dept-info"><h3>Pharmacy</h3></div>
+                </div>
+                <div class="dept-card" onclick="window.location.href='department-profile.html?id=radiology'" style="cursor: pointer;">
+                    <div class="dept-icon"><i class="fa-solid fa-x-ray"></i></div>
+                    <div class="dept-info"><h3>Radiology</h3></div>
+                </div>
+                <div class="dept-card" onclick="window.location.href='department-profile.html?id=clinical-laboratory'" style="cursor: pointer;">
+                    <div class="dept-icon"><i class="fa-solid fa-flask-vial"></i></div>
+                    <div class="dept-info"><h3>Clinical Laboratory</h3></div>
+                </div>
+                <div class="dept-card" onclick="window.location.href='department-profile.html?id=physiotherapy'" style="cursor: pointer;">
+                    <div class="dept-icon"><i class="fa-solid fa-person-walking-with-cane"></i></div>
+                    <div class="dept-info"><h3>Physiotherapy</h3></div>
+                </div>
+                <div class="dept-card" onclick="window.location.href='department-profile.html?id=blood-bank'" style="cursor: pointer;">
+                    <div class="dept-icon"><i class="fa-solid fa-droplet"></i></div>
+                    <div class="dept-info"><h3>Blood Bank</h3></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nursing Department -->
+        <div class="dept-category fade-up">
+            <h2 id="nursing" class="dept-category-title"><i class="fa-solid fa-user-nurse"></i> Nursing Department</h2>
+            <div class="dept-grid">
+                <div class="dept-card" onclick="window.location.href='department-profile.html?id=nursing-care'" style="cursor: pointer;">
+                    <div class="dept-icon"><i class="fa-solid fa-user-nurse"></i></div>
+                    <div class="dept-info"><h3>Nursing Care</h3><p>Dedicated round-the-clock patient care</p></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Administrative Departments -->
+        <div class="dept-category fade-up">
+            <h2 id="administrative" class="dept-category-title"><i class="fa-solid fa-building"></i> Administrative Departments</h2>
+            <div class="dept-grid">
+                <div class="dept-card" onclick="window.location.href='department-profile.html?id=carmel-medical-society'" style="cursor: pointer;">
+                    <div class="dept-icon"><i class="fa-solid fa-users"></i></div>
+                    <div class="dept-info"><h3>Carmel Medical Society</h3></div>
+                </div>
+                <div class="dept-card" onclick="window.location.href='department-profile.html?id=quality-department'" style="cursor: pointer;">
+                    <div class="dept-icon"><i class="fa-solid fa-award"></i></div>
+                    <div class="dept-info"><h3>Quality Department</h3></div>
+                </div>
+                <div class="dept-card" onclick="window.location.href='department-profile.html?id=hr-department'" style="cursor: pointer;">
+                    <div class="dept-icon"><i class="fa-solid fa-user-tie"></i></div>
+                    <div class="dept-info"><h3>HR Department</h3></div>
+                </div>
+                <div class="dept-card" onclick="window.location.href='department-profile.html?id=operations-department'" style="cursor: pointer;">
+                    <div class="dept-icon"><i class="fa-solid fa-cogs"></i></div>
+                    <div class="dept-info"><h3>Operations Department</h3></div>
+                </div>
+                <div class="dept-card" onclick="window.location.href='department-profile.html?id=finance'" style="cursor: pointer;">
+                    <div class="dept-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                    <div class="dept-info"><h3>Finance</h3></div>
+                </div>
+                <div class="dept-card" onclick="window.location.href='department-profile.html?id=it-department'" style="cursor: pointer;">
+                    <div class="dept-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <div class="dept-info"><h3>IT Department</h3></div>
+                </div>
+                <div class="dept-card" onclick="window.location.href='department-profile.html?id=public-relations'" style="cursor: pointer;">
+                    <div class="dept-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                    <div class="dept-info"><h3>Public Relations</h3></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <a href="index.html" class="logo footer-logo">
+                    <img src="assets/landing/main_logo-1-scaled.png" alt="Carmel Hospital" class="nav-logo-img"> Carmel Hospital
+                </a>
+                <p>Providing the best possible care with love, service, life, and sacrifice. Your health is our priority.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Departments</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="doctor.html">Our Doctors</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Opening Hours</h3>
+                <ul class="hours-list">
+                    <li>OP Consulting: <span>09.30AM - 01.00PM</span></li>
+                    <li>IP Visiting (Morn): <span>07.00AM - 09.00PM</span></li>
+                    <li>IP Visiting (Eve): <span>12.00PM - 09.00PM</span></li>
+                    <li>Registration: <span>07.30AM - 12.00PM</span></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-location-dot"></i> Ashokapuram, Aluva – 683101</li>
+                    <li><i class="fa-solid fa-phone"></i> 0484-2623594, 9188909863</li>
+                    <li><i class="fa-solid fa-envelope"></i> info@carmelhospital.org</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Carmel Hospital. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

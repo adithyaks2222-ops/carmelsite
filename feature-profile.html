@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Feature | Carmel Hospital</title>
+    <link rel="stylesheet" href="style.css?v=1.5">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Global Loader -->
+    <div id="global-loader" class="global-loader">
+        <div class="loader-content">
+            <img src="assets/landing/main_logo-1-scaled.png" alt="Carmel Hospital Logo">
+        </div>
+    </div>
+    <script>
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const loader = document.getElementById('global-loader');
+                if (loader) {
+                    loader.style.opacity = '0';
+                    setTimeout(() => loader.style.display = 'none', 500);
+                }
+            }, 500);
+        });
+    </script>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/landing/main_logo-1-scaled.png" alt="Carmel Hospital" class="nav-logo-img"> Carmel Hospital
+            </a>
+            <div class="nav-links">
+                <a href="index.html#home">Home</a>
+                <a href="about.html">About</a>
+                <a href="department.html">Departments</a>
+                <a href="services.html" style="border-bottom: 2px solid var(--secondary-color);">Services</a>
+                <a href="doctor.html">Doctors</a>
+                <a href="index.html#emergency" class="btn-primary btn-nav">Emergency</a>
+            </div>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html#home">Home</a>
+        <a href="about.html">About</a>
+        <a href="department.html">Departments</a>
+        <a href="services.html">Services</a>
+        <a href="doctor.html">Doctors</a>
+        <a href="index.html#emergency" class="btn-primary">Emergency</a>
+    </div>
+
+    <!-- Dynamic Feature Profile Content -->
+    <div class="feature-anim-layer" id="feature-container">
+        
+        <!-- Banner Section -->
+        <header class="feature-banner" id="f-banner">
+            <div class="feature-banner-content">
+                <i id="f-icon" class="feature-banner-icon fa-solid fa-heart-pulse"></i>
+                <h1 id="f-title">Service Feature</h1>
+                <p>Advanced medical services with compassionate care.</p>
+            </div>
+            <!-- Arrow Controls -->
+            <div class="feature-controls">
+                <button class="control-btn" id="prev-feature" aria-label="Previous Service"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="control-btn" id="next-feature" aria-label="Next Service"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </header>
+
+        <!-- Stats Strip -->
+        <div class="feature-stats-strip" id="f-stats">
+            <!-- Populated dynamically -->
+        </div>
+
+        <!-- Info Grid -->
+        <section class="feature-profile-container">
+            <!-- Left: Info -->
+            <div class="feature-info-section">
+                <!-- About -->
+                <div class="feature-card-panel">
+                    <h2><i class="fa-solid fa-circle-info"></i> About This Service</h2>
+                    <p id="f-about"></p>
+                </div>
+
+                <!-- Facilities -->
+                <div class="feature-card-panel">
+                    <h2><i class="fa-solid fa-microscope"></i> Key Facilities</h2>
+                    <ul class="feature-list" id="f-facilities">
+                        <!-- Populated dynamically -->
+                    </ul>
+                </div>
+
+                <!-- Treatments -->
+                <div class="feature-card-panel">
+                    <h2><i class="fa-solid fa-kit-medical"></i> Treatments & Methodologies</h2>
+                    <ul class="feature-list" id="f-treatments">
+                        <!-- Populated dynamically -->
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right: Sidebar -->
+            <aside class="feature-sidebar">
+                
+                <!-- Gallery Preview -->
+                <div class="feature-gallery" id="f-gallery">
+                    <!-- Populated dynamically -->
+                </div>
+
+                <!-- Emergency Card -->
+                <div class="dept-contact-card" style="background: var(--emergency-color);">
+                    <h3>24/7 Emergency Support</h3>
+                    <p>Immediate medical attention available round the clock.</p>
+                    <a href="tel:04842907000" class="btn-alert" style="background: white; color: var(--emergency-color); text-decoration: none; padding: 1rem; border-radius: 5px; font-weight: bold;"><i class="fa-solid fa-phone"></i> 0484 290 7000</a>
+                </div>
+
+                <!-- Contact Card -->
+                <div class="dept-contact-card">
+                    <h3>Get In Touch</h3>
+                    <p>Have questions about this service?</p>
+                    <a href="mailto:info@carmelhosp.org" class="btn-primary" style="background: var(--secondary-color); color: white; text-decoration: none; padding: 1rem; border-radius: 5px; display: block; font-weight: bold;"><i class="fa-solid fa-envelope"></i> Email Us</a>
+                </div>
+            </aside>
+        </section>
+
+        <!-- Specialists Grid -->
+        <section class="feature-specialists-section">
+            <h2>Specialists For This Service</h2>
+            <div class="feature-doctors-grid" id="f-doctors">
+                <!-- Populated dynamically -->
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <a href="#" class="logo footer-logo">
+                    <img src="assets/landing/main_logo-1-scaled.png" alt="Carmel Hospital" class="nav-logo-img"> Carmel Hospital
+                </a>
+                <p>Providing the best possible care with love, service, life, and sacrifice.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="doctors.js"></script>
+    <script src="features.js"></script>
+    <script src="feature-profile.js"></script>
+</body>
+</html>

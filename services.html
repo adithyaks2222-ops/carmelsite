@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Carmel Hospital</title>
+    <link rel="stylesheet" href="style.css?v=1.3">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Global Loader -->
+    <div id="global-loader" class="global-loader">
+        <div class="loader-content">
+            <img src="assets/landing/main_logo-1-scaled.png" alt="Carmel Hospital Logo">
+        </div>
+    </div>
+    <script>
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const loader = document.getElementById('global-loader');
+                if (loader) {
+                    loader.style.opacity = '0';
+                    setTimeout(() => loader.style.display = 'none', 500);
+                }
+            }, 500);
+        });
+    </script>
+
+    <!-- Liquid Glass Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/landing/main_logo-1-scaled.png" alt="Carmel Hospital" class="nav-logo-img"> Carmel Hospital
+            </a>
+            <div class="nav-links">
+                <a href="index.html#home">Home</a>
+                <a href="about.html">About</a>
+                <a href="department.html">Departments</a>
+                <a href="#" style="border-bottom: 2px solid var(--secondary-color);">Services</a>
+                <a href="doctor.html">Doctors</a>
+                <a href="index.html#emergency" class="btn-primary btn-nav">Emergency</a>
+            </div>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html#home">Home</a>
+        <a href="about.html">About</a>
+        <a href="department.html">Departments</a>
+        <a href="#">Services</a>
+        <a href="doctor.html">Doctors</a>
+        <a href="index.html#emergency" class="btn-primary">Emergency</a>
+    </div>
+
+    <!-- Page Header -->
+    <header class="services-header">
+        <h1>Our Medical Services</h1>
+        <p>Providing advanced diagnostics and state-of-the-art laboratory investigations.</p>
+    </header>
+
+    <!-- Services Content -->
+    <section class="services-container">
+        
+        <!-- Diagnostic Imaging Services -->
+        <div class="services-category fade-up">
+            <h2 class="services-category-title"><i class="fa-solid fa-x-ray"></i> Diagnostic Imaging Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-wave-square"></i></div>
+                    <div class="service-info"><h3>Mammography</h3></div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-heart-circle-bolt"></i></div>
+                    <div class="service-info"><h3>Doppler Studies</h3></div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-baby"></i></div>
+                    <div class="service-info"><h3>Ultra Sonography</h3></div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                    <div class="service-info"><h3>Echo Cardiogram</h3></div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-microscope"></i></div>
+                    <div class="service-info"><h3>Endoscopy</h3></div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                    <div class="service-info"><h3>Colonoscopy</h3></div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-vial-virus"></i></div>
+                    <div class="service-info"><h3>Cystoscopy</h3></div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-head-side-mask"></i></div>
+                    <div class="service-info"><h3>Nasal Endoscopy</h3></div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-lungs"></i></div>
+                    <div class="service-info"><h3>Video Laryngoscopy</h3></div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-x-ray"></i></div>
+                    <div class="service-info"><h3>Digital X-Ray Imaging</h3></div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-person-pregnant"></i></div>
+                    <div class="service-info"><h3>Hysterosalpingography</h3></div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-person-running"></i></div>
+                    <div class="service-info"><h3>Treadmill Test</h3></div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-heart-crack"></i></div>
+                    <div class="service-info"><h3>Electrocardiogram</h3></div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-ear-listen"></i></div>
+                    <div class="service-info"><h3>Hearing Test</h3></div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-stethoscope"></i></div>
+                    <div class="service-info"><h3>Cardiotocography (NST)</h3></div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-bed-pulse"></i></div>
+                    <div class="service-info"><h3>C-Arm</h3></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Laboratory Investigations -->
+        <div class="services-category fade-up">
+            <h2 class="services-category-title"><i class="fa-solid fa-flask-vial"></i> Laboratory Investigations</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-flask"></i></div>
+                    <div class="service-info"><h3>Biochemistry</h3></div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-vials"></i></div>
+                    <div class="service-info"><h3>Haematology & Clinical Pathology</h3></div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-disease"></i></div>
+                    <div class="service-info"><h3>Microbiology & Serology</h3></div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-microscope"></i></div>
+                    <div class="service-info"><h3>Urine and Stool Analysis</h3></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <a href="index.html" class="logo footer-logo">
+                    <img src="assets/landing/main_logo-1-scaled.png" alt="Carmel Hospital" class="nav-logo-img"> Carmel Hospital
+                </a>
+                <p>Providing the best possible care with love, service, life, and sacrifice. Your health is our priority.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="department.html">Departments</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="doctor.html">Our Doctors</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Opening Hours</h3>
+                <ul class="hours-list">
+                    <li>OP Consulting: <span>09.30AM - 01.00PM</span></li>
+                    <li>IP Visiting (Morn): <span>07.00AM - 09.00PM</span></li>
+                    <li>IP Visiting (Eve): <span>12.00PM - 09.00PM</span></li>
+                    <li>Registration: <span>07.30AM - 12.00PM</span></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-location-dot"></i> Ashokapuram, Aluva – 683101</li>
+                    <li><i class="fa-solid fa-phone"></i> 0484-2623594, 9188909863</li>
+                    <li><i class="fa-solid fa-envelope"></i> info@carmelhospital.org</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Carmel Hospital. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

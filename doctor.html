@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Doctors | Carmel Hospital</title>
+    <link rel="stylesheet" href="style.css?v=1.1">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Global Loader -->
+    <div id="global-loader" class="global-loader">
+        <div class="loader-content">
+            <img src="assets/landing/main_logo-1-scaled.png" alt="Carmel Hospital Logo">
+        </div>
+    </div>
+    <script>
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const loader = document.getElementById('global-loader');
+                if (loader) {
+                    loader.style.opacity = '0';
+                    setTimeout(() => loader.style.display = 'none', 500);
+                }
+            }, 500);
+        });
+    </script>
+
+    <!-- Liquid Glass Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/landing/main_logo-1-scaled.png" alt="Carmel Hospital" class="nav-logo-img"> Carmel Hospital
+            </a>
+            <div class="nav-links">
+                <a href="index.html#home">Home</a>
+                <a href="about.html">About</a>
+                <a href="index.html#departments">Departments</a>
+                <a href="services.html">Services</a>
+                <a href="#" style="border-bottom: 2px solid var(--secondary-color);">Doctors</a>
+                <a href="index.html#emergency" class="btn-primary btn-nav">Emergency</a>
+            </div>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html#home">Home</a>
+        <a href="about.html">About</a>
+        <a href="index.html#departments">Departments</a>
+        <a href="services.html">Services</a>
+        <a href="#">Doctors</a>
+        <a href="index.html#emergency" class="btn-primary">Emergency</a>
+    </div>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <h1>Our Medical Specialists</h1>
+        <p>A team of highly qualified and experienced professionals dedicated to your care.</p>
+    </header>
+
+    <!-- Doctors Grid -->
+    <section class="doctors-grid">
+        <!-- Dr. Sr. Litty Maria -->
+        <div class="doctor-card" onclick="window.location.href='profile.html?id=dr-sr-litty-maria'"
+            style="cursor: pointer;">
+            <div class="doc-img-wrapper">
+                <img src="assets/doctors/Dr.Sr_.Litty-Maria.jpg" alt="Dr. Sr. Litty Maria" loading="lazy">
+            </div>
+            <div class="doc-info">
+                <h3>Dr. Sr. Litty Maria</h3>
+                <p>Physician</p>
+            </div>
+        </div>
+
+        <!-- Dr. Jimmy Jose -->
+        <div class="doctor-card" onclick="window.location.href='profile.html?id=dr-jimmy-jose'"
+            style="cursor: pointer;">
+            <div class="doc-img-wrapper">
+                <img src="assets/doctors/Dr.Jimmy-Jose.jpg" alt="Dr. Jimmy Jose" loading="lazy">
+            </div>
+            <div class="doc-info">
+                <h3>Dr. Jimmy Jose</h3>
+                <p>Chief Physician</p>
+            </div>
+        </div>
+
+        <!-- Dr. Prema George -->
+        <div class="doctor-card" onclick="window.location.href='profile.html?id=dr-prema-george'"
+            style="cursor: pointer;">
+            <div class="doc-img-wrapper">
+                <img src="assets/doctors/Dr.Prema-George.jpg" alt="Dr. Prema George" loading="lazy">
+            </div>
+            <div class="doc-info">
+                <h3>Dr. Prema George</h3>
+                <p>Chief Gynecologist</p>
+            </div>
+        </div>
+
+        <!-- Dr. Sr. Soumya Thomas -->
+        <div class="doctor-card" onclick="window.location.href='profile.html?id=dr-sr-soumya-thomas'"
+            style="cursor: pointer;">
+            <div class="doc-img-wrapper">
+                <img src="assets/doctors/Dr.Sr_.Soumya-Thomas.jpg" alt="Dr. Sr. Soumya Thomas" loading="lazy">
+            </div>
+            <div class="doc-info">
+                <h3>Dr. Sr. Soumya Thomas</h3>
+                <p>Gynecologist</p>
+            </div>
+        </div>
+
+        <!-- Dr. Santhakumari K -->
+        <div class="doctor-card" onclick="window.location.href='profile.html?id=dr-santhakumari-k'"
+            style="cursor: pointer;">
+            <div class="doc-img-wrapper">
+                <img src="assets/doctors/Dr.Santhakumari-K.jpg" alt="Dr. Santhakumari K" loading="lazy">
+            </div>
+            <div class="doc-info">
+                <h3>Dr. Santhakumari K</h3>
+                <p>Gynecologist</p>
+            </div>
+        </div>
+
+        <!-- Dr. Rafeeq A. K. -->
+        <div class="doctor-card" onclick="window.location.href='profile.html?id=dr-rafeeq-a-k'"
+            style="cursor: pointer;">
+            <div class="doc-img-wrapper">
+                <img src="assets/doctors/Dr.Rafeeq-A-K.jpg" alt="Dr. Rafeeq A. K." loading="lazy">
+            </div>
+            <div class="doc-info">
+                <h3>Dr. Rafeeq A. K.</h3>
+                <p>Pediatrician</p>
+            </div>
+        </div>
+
+        <!-- Dr. Mathew Issac -->
+        <div class="doctor-card" onclick="window.location.href='profile.html?id=dr-mathew-issac'"
+            style="cursor: pointer;">
+            <div class="doc-img-wrapper">
+                <img src="assets/doctors/Dr.Mathew-Issac.jpg" alt="Dr. Mathew Issac" loading="lazy">
+            </div>
+            <div class="doc-info">
+                <h3>Dr. Mathew Issac</h3>
+                <p>Senior Orthopedic Surgeon</p>
+            </div>
+        </div>
+
+        <!-- Dr. Denny P Kuttikkatu -->
+        <div class="doctor-card" onclick="window.location.href='profile.html?id=dr-denny-p-kuttikkatu'"
+            style="cursor: pointer;">
+            <div class="doc-img-wrapper">
+                <img src="assets/doctors/DR.DENNY.jpg" alt="Dr. Denny P Kuttikkatu" loading="lazy">
+            </div>
+            <div class="doc-info">
+                <h3>Dr. Denny P Kuttikkatu</h3>
+                <p>Laparoscopic Surgeon</p>
+            </div>
+        </div>
+
+        <!-- Dr. Vinod Thomas -->
+        <div class="doctor-card" onclick="window.location.href='profile.html?id=dr-vinod-thomas'"
+            style="cursor: pointer;">
+            <div class="doc-img-wrapper">
+                <img src="assets/doctors/Dr.Vinod-Thomas.jpg" alt="Dr. Vinod Thomas" loading="lazy">
+            </div>
+            <div class="doc-info">
+                <h3>Dr. Vinod Thomas</h3>
+                <p>Interventional Cardiologist</p>
+            </div>
+        </div>
+
+        <!-- Dr. Saji Subramanian -->
+        <div class="doctor-card" onclick="window.location.href='profile.html?id=dr-saji-subramanian'"
+            style="cursor: pointer;">
+            <div class="doc-img-wrapper">
+                <img src="assets/doctors/Dr.Saji-Subramanian.jpg" alt="Dr. Saji Subramanian" loading="lazy">
+            </div>
+            <div class="doc-info">
+                <h3>Dr. Saji Subramanian</h3>
+                <p>Interventional Cardiologist</p>
+            </div>
+        </div>
+
+        <!-- Dr. Uma Lakshmi Damodar -->
+        <div class="doctor-card" onclick="window.location.href='profile.html?id=dr-uma-lakshmi-damodar'"
+            style="cursor: pointer;">
+            <div class="doc-img-wrapper">
+                <img src="assets/doctors/Dr.Uma-Lakshmi-Damodar.jpg" alt="Dr. Uma Lakshmi Damodar" loading="lazy">
+            </div>
+            <div class="doc-info">
+                <h3>Dr. Uma Lakshmi Damodar</h3>
+                <p>ENT Specialist</p>
+            </div>
+        </div>
+
+        <!-- Dr. Muneer A.A. -->
+        <div class="doctor-card" onclick="window.location.href='profile.html?id=dr-muneer-a-a'"
+            style="cursor: pointer;">
+            <div class="doc-img-wrapper">
+                <img src="assets/doctors/Dr.Muneer.jpg" alt="Dr. Muneer A.A." loading="lazy">
+            </div>
+            <div class="doc-info">
+                <h3>Dr. Muneer A.A.</h3>
+                <p>Anesthesiologist</p>
+            </div>
+        </div>
+
+        <!-- Dr. Sr. Sheela Maria -->
+        <div class="doctor-card" onclick="window.location.href='profile.html?id=dr-sr-sheela-maria'"
+            style="cursor: pointer;">
+            <div class="doc-img-wrapper">
+                <img src="assets/doctors/Dr.Sr_.Sheela-Maria.jpg" alt="Dr. Sr. Sheela Maria" loading="lazy">
+            </div>
+            <div class="doc-info">
+                <h3>Dr. Sr. Sheela Maria</h3>
+                <p>Medical Superintendent</p>
+            </div>
+        </div>
+
+        <!-- Dr. Aswathy Anand -->
+        <div class="doctor-card" onclick="window.location.href='profile.html?id=dr-aswathy-anand'"
+            style="cursor: pointer;">
+            <div class="doc-img-wrapper">
+                <img src="assets/doctors/Dr.Aswathy-Anand.jpg" alt="Dr. Aswathy Anand" loading="lazy">
+            </div>
+            <div class="doc-info">
+                <h3>Dr. Aswathy Anand</h3>
+                <p>Psychologist</p>
+            </div>
+        </div>
+
+        <!-- Dr. Vilesh Valsalan -->
+        <div class="doctor-card" onclick="window.location.href='profile.html?id=dr-vilesh-valsalan'"
+            style="cursor: pointer;">
+            <div class="doc-img-wrapper">
+                <img src="assets/doctors/Dr.Vilesh-Valson.jpg" alt="Dr. Vilesh Valsalan" loading="lazy">
+            </div>
+            <div class="doc-info">
+                <h3>Dr. Vilesh Valsalan</h3>
+                <p>Consultant Nephrologist</p>
+            </div>
+        </div>
+
+        <!-- Dr. Jose Jimmy -->
+        <div class="doctor-card" onclick="window.location.href='profile.html?id=dr-jose-jimmy'"
+            style="cursor: pointer;">
+            <div class="doc-img-wrapper">
+                <img src="assets/doctors/Dr.Jose-Jimmy.jpg" alt="Dr. Jose Jimmy" loading="lazy">
+            </div>
+            <div class="doc-info">
+                <h3>Dr. Jose Jimmy</h3>
+                <p>Dental Surgeon</p>
+            </div>
+        </div>
+
+        <!-- Dr. Merin Cherian -->
+        <div class="doctor-card" onclick="window.location.href='profile.html?id=dr-merin-cherian'"
+            style="cursor: pointer;">
+            <div class="doc-img-wrapper">
+                <img src="assets/doctors/Dr.Merin-Cherian.jpg" alt="Dr. Merin Cherian" loading="lazy">
+            </div>
+            <div class="doc-info">
+                <h3>Dr. Merin Cherian</h3>
+                <p>Orthodontist</p>
+            </div>
+        </div>
+
+        <!-- Dr. K. Ajit -->
+        <div class="doctor-card" onclick="window.location.href='profile.html?id=dr-k-ajit'" style="cursor: pointer;">
+            <div class="doc-img-wrapper">
+                <img src="assets/doctors/Dr.K-Ajit.jpg" alt="Dr. K. Ajit" loading="lazy">
+            </div>
+            <div class="doc-info">
+                <h3>Dr. K. Ajit</h3>
+                <p>CMO</p>
+            </div>
+        </div>
+
+        <!-- Dr. Cijoy Joseph -->
+        <div class="doctor-card" onclick="window.location.href='profile.html?id=dr-cijoy-joseph'"
+            style="cursor: pointer;">
+            <div class="doc-img-wrapper">
+                <img src="assets/doctors/Dr.Cijoy-Joseph.jpg" alt="Dr. Cijoy Joseph" loading="lazy">
+            </div>
+            <div class="doc-info">
+                <h3>Dr. Cijoy Joseph</h3>
+                <p>RMO</p>
+            </div>
+        </div>
+
+        <!-- Dr. Joseph George -->
+        <div class="doctor-card" onclick="window.location.href='profile.html?id=dr-joseph-george'"
+            style="cursor: pointer;">
+            <div class="doc-img-wrapper">
+                <img src="assets/doctors/Dr.Joseph-George.jpg" alt="Dr. Joseph George" loading="lazy">
+            </div>
+            <div class="doc-info">
+                <h3>Dr. Joseph George</h3>
+                <p>Orthopedic Surgeon</p>
+            </div>
+        </div>
+
+        <!-- Dr. Nithya Nathan -->
+        <div class="doctor-card" onclick="window.location.href='profile.html?id=dr-nithya-nathan'"
+            style="cursor: pointer;">
+            <div class="doc-img-wrapper">
+                <img src="assets/doctors/Dr.Nithya-Nathan.jpg" alt="Dr. Nithya Nathan" loading="lazy">
+            </div>
+            <div class="doc-info">
+                <h3>Dr. Nithya Nathan</h3>
+                <p>Gynecologist</p>
+            </div>
+        </div>
+
+        <!-- Dr. Yashna V -->
+        <div class="doctor-card" onclick="window.location.href='profile.html?id=dr-yashna-v'" style="cursor: pointer;">
+            <div class="doc-img-wrapper">
+                <img src="assets/doctors/Dr.Yashna-V.jpg" alt="Dr. Yashna V" loading="lazy">
+            </div>
+            <div class="doc-info">
+                <h3>Dr. Yashna V</h3>
+                <p>Gynecologist</p>
+            </div>
+        </div>
+
+        <!-- Dr. Sreedhanya -->
+        <div class="doctor-card" onclick="window.location.href='profile.html?id=dr-sreedhanya'"
+            style="cursor: pointer;">
+            <div class="doc-img-wrapper">
+                <img src="assets/doctors/sree.png" alt="Dr. Sreedhanya" loading="lazy">
+            </div>
+            <div class="doc-info">
+                <h3>Dr. Sreedhanya</h3>
+                <p>Ophthalmologist</p>
+            </div>
+        </div>
+
+        <!-- Dr. Anagha -->
+        <div class="doctor-card" onclick="window.location.href='profile.html?id=dr-anagha'" style="cursor: pointer;">
+            <div class="doc-img-wrapper">
+                <img src="assets/doctors/anagha.png" alt="Dr. Anagha" loading="lazy">
+            </div>
+            <div class="doc-info">
+                <h3>Dr. Anagha</h3>
+                <p>Dermatologist</p>
+            </div>
+        </div>
+
+        <!-- Dr. Delcine Maria Jose -->
+        <div class="doctor-card" onclick="window.location.href='profile.html?id=dr-delcine-maria-jose'"
+            style="cursor: pointer;">
+            <div class="doc-img-wrapper">
+                <img src="assets/doctors/delcine.png" alt="Dr. Delcine Maria Jose" loading="lazy">
+            </div>
+            <div class="doc-info">
+                <h3>Dr. Delcine Maria Jose</h3>
+                <p>Consultant Psychiatrist</p>
+            </div>
+        </div>
+
+        <!-- Dr. Sam Koruth -->
+        <div class="doctor-card" onclick="window.location.href='profile.html?id=dr-sam-koruth'"
+            style="cursor: pointer;">
+            <div class="doc-img-wrapper">
+                <img src="assets/doctors/sam.png" alt="Dr. Sam Koruth" loading="lazy">
+            </div>
+            <div class="doc-info">
+                <h3>Dr. Sam Koruth</h3>
+                <p>General Surgery</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <a href="index.html" class="logo footer-logo">
+                    <img src="assets/landing/main_logo-1-scaled.png" alt="Carmel Hospital" class="nav-logo-img"> Carmel Hospital
+                </a>
+                <p>Providing the best possible care with love, service, life, and sacrifice. Your health is our
+                    priority.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="index.html#departments">Departments</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="#">Our Doctors</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Opening Hours</h3>
+                <ul class="hours-list">
+                    <li>OP Consulting: <span>09.30AM - 01.00PM</span></li>
+                    <li>IP Visiting (Morn): <span>07.00AM - 09.00PM</span></li>
+                    <li>IP Visiting (Eve): <span>12.00PM - 09.00PM</span></li>
+                    <li>Registration: <span>07.30AM - 12.00PM</span></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-location-dot"></i> Ashokapuram, Aluva – 683101</li>
+                    <li><i class="fa-solid fa-phone"></i> 0484-2623594, 9188909863</li>
+                    <li><i class="fa-solid fa-envelope"></i> info@carmelhospital.org</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Carmel Hospital. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

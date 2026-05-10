@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carmel Hospital | Love - Service - Life - Sacrifice</title>
+    <link rel="stylesheet" href="style.css?v=1.1">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Global Loader -->
+    <div id="global-loader" class="global-loader">
+        <div class="loader-content">
+            <img src="assets/landing/main_logo-1-scaled.png" alt="Carmel Hospital Logo">
+        </div>
+    </div>
+    <script>
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const loader = document.getElementById('global-loader');
+                if (loader) {
+                    loader.style.opacity = '0';
+                    setTimeout(() => loader.style.display = 'none', 500);
+                }
+            }, 500);
+        });
+    </script>
+
+    <!-- Liquid Glass Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="assets/landing/main_logo-1-scaled.png" alt="Carmel Hospital" class="nav-logo-img"> Carmel
+                Hospital
+            </a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="about.html">About</a>
+                <a href="department.html">Departments</a>
+                <a href="services.html">Services</a>
+                <a href="doctor.html">Doctors</a>
+                <a href="#emergency">Emergency</a>
+            </div>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#home">Home</a>
+        <a href="about.html">About</a>
+        <a href="department.html">Departments</a>
+        <a href="services.html">Services</a>
+        <a href="doctor.html">Doctors</a>
+        <a href="#emergency" class="btn-primary">Emergency</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <img src="assets/landing/banner1.jpg" alt="Carmel Hospital">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content fade-up">
+            <span class="badge">Top-Notch Medical Care</span>
+            <h1>Love. Service.<br>Life. Sacrifice.</h1>
+            <p>Carmel Hospital offers top-notch medical treatment services to patients from all walks of life. With a
+                team of highly skilled medical professionals and state-of-the-art facilities.</p>
+            <div class="hero-actions">
+                <a href="about.html" class="btn-primary">Discover More <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#contact" class="btn-secondary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-image fade-in-left">
+                <img src="assets/about/Intensive-Care-Units.jpg" alt="About Carmel Hospital" loading="lazy">
+                <div class="glass-card stats-card">
+                    <h3>24/7</h3>
+                    <p>Emergency Support</p>
+                </div>
+            </div>
+            <div class="about-content fade-in-right">
+                <h2 class="section-title">Who We Are</h2>
+                <h3>Dedicated to Your Health & Well-being</h3>
+                <p>Carmel Hospital employs a team of highly qualified and experienced medical professionals, including
+                    doctors, nurses, and technicians. With their expertise and commitment to patient care, they ensure
+                    that every patient receives the best possible treatment and attention.</p>
+                <ul class="features-list">
+                    <li><i class="fa-solid fa-check-circle"></i> Qualified Doctors</li>
+                    <li><i class="fa-solid fa-check-circle"></i> State-of-the-art Facilities</li>
+                    <li><i class="fa-solid fa-check-circle"></i> 24/7 Emergency Care</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Affordable Treatment</li>
+                </ul>
+                <a href="#departments" class="btn-primary">Explore Departments</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Departments Section (Stacking Scroll Cards) -->
+    <section id="departments" class="departments">
+        <div class="section-header fade-up">
+            <h2 class="section-title">Our Departments</h2>
+            <p>Comprehensive medical services covering all major specialties.</p>
+        </div>
+
+        <div class="stack-cards-container" id="stack-container">
+            <div class="stack-card card-1">
+                <div class="card-icon"><i class="fa-solid fa-heart-circle-check"></i></div>
+                <div class="card-content">
+                    <h3>Clinical Departments</h3>
+                    <p>Cardiology, Dermatology, ENT, Dental, Clinical Psychology, Emergency Medicine, and more.</p>
+                    <a href="department.html#clinical" class="learn-more">Learn More <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="stack-card card-2">
+                <div class="card-icon"><i class="fa-solid fa-user-nurse"></i></div>
+                <div class="card-content">
+                    <h3>Nursing & Paramedical</h3>
+                    <p>Dedicated nursing care and comprehensive paramedical support for all treatments.</p>
+                    <a href="department.html#nursing" class="learn-more">Learn More <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="stack-card card-3">
+                <div class="card-icon"><i class="fa-solid fa-bed-pulse"></i></div>
+                <div class="card-content">
+                    <h3>Intensive Care Units</h3>
+                    <p>Advanced life support and monitoring systems available around the clock.</p>
+                    <a href="department.html#icu" class="learn-more">Learn More <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="stack-card card-4">
+                <div class="card-icon"><i class="fa-solid fa-hand-holding-medical"></i></div>
+                <div class="card-content">
+                    <h3>Supportive Services</h3>
+                    <p>Ambulance, Biomedical, Canteen, Laboratory, Pharmacy & X-Ray services.</p>
+                    <a href="department.html#paramedical" class="learn-more">Learn More <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section (Minimal Carousel) -->
+    <section id="doctors" class="doctors">
+        <div class="section-header fade-up">
+            <h2 class="section-title">Meet Our Specialists</h2>
+            <p>We have a team of highly qualified doctors who are experts in their respective fields.</p>
+        </div>
+
+        <div class="carousel-container fade-up">
+            <div class="carousel-track" id="doctor-track">
+                <!-- Doctor cards will be dynamically injected here by script.js -->
+            </div>
+
+            <div class="carousel-controls">
+                <button class="control-btn prev-btn" id="prev-doc"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="control-btn next-btn" id="next-doc"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Section -->
+    <section id="emergency" class="emergency">
+        <div class="emergency-content glass-panel fade-up">
+            <div class="em-icon">
+                <i class="fa-solid fa-truck-medical"></i>
+            </div>
+            <h2>Need Emergency Help?</h2>
+            <p>We provide round-the-clock emergency help services to patients in need with a quick response time.</p>
+            <div class="contact-methods">
+                <div class="method">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <span>Emergency Line</span>
+                        <strong>0484-2621314</strong>
+                    </div>
+                </div>
+                <div class="method">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <span>Location</span>
+                        <strong>Ashokapuram, Aluva</strong>
+                    </div>
+                </div>
+            </div>
+            <a href="tel:04842621314" class="btn-alert">Call Emergency Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <a href="#" class="logo footer-logo">
+                    <img src="assets/landing/main_logo-1-scaled.png" alt="Carmel Hospital" class="nav-logo-img"> Carmel
+                    Hospital
+                </a>
+                <p>Providing the best possible care with love, service, life, and sacrifice. Your health is our
+                    priority.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="department.html">Departments</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="doctor.html">Our Doctors</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Opening Hours</h3>
+                <ul class="hours-list">
+                    <li>OP Consulting: <span>09.30AM - 01.00PM</span></li>
+                    <li>IP Visiting (Morn): <span>07.00AM - 09.00PM</span></li>
+                    <li>IP Visiting (Eve): <span>12.00PM - 09.00PM</span></li>
+                    <li>Registration: <span>07.30AM - 12.00PM</span></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-location-dot"></i> Ashokapuram, Aluva – 683101</li>
+                    <li><i class="fa-solid fa-phone"></i> 0484-2623594, 9188909863</li>
+                    <li><i class="fa-solid fa-envelope"></i> info@carmelhospital.org</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Carmel Hospital. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="doctors.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

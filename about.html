@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Carmel Hospital</title>
+    <link rel="stylesheet" href="style.css?v=1.2">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Global Loader -->
+    <div id="global-loader" class="global-loader">
+        <div class="loader-content">
+            <img src="assets/landing/main_logo-1-scaled.png" alt="Carmel Hospital Logo">
+        </div>
+    </div>
+    <script>
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const loader = document.getElementById('global-loader');
+                if (loader) {
+                    loader.style.opacity = '0';
+                    setTimeout(() => loader.style.display = 'none', 500);
+                }
+            }, 500);
+        });
+    </script>
+
+    <!-- Liquid Glass Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/landing/main_logo-1-scaled.png" alt="Carmel Hospital" class="nav-logo-img"> Carmel Hospital
+            </a>
+            <div class="nav-links">
+                <a href="index.html#home">Home</a>
+                <a href="#" style="border-bottom: 2px solid var(--secondary-color);">About</a>
+                <a href="department.html">Departments</a>
+                <a href="services.html">Services</a>
+                <a href="doctor.html">Doctors</a>
+                <a href="index.html#emergency" class="btn-primary btn-nav">Emergency</a>
+            </div>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html#home">Home</a>
+        <a href="#">About</a>
+        <a href="department.html">Departments</a>
+        <a href="services.html">Services</a>
+        <a href="doctor.html">Doctors</a>
+        <a href="index.html#emergency" class="btn-primary">Emergency</a>
+    </div>
+
+    <!-- Page Header -->
+    <header class="about-page-header fade-up">
+        <h1>About Carmel Hospital</h1>
+        <p>A legacy of compassionate care, healing, and dedication to our community.</p>
+    </header>
+
+    <!-- About Content -->
+    <section class="about-page-container">
+        
+        <!-- Administrator's Message -->
+        <div class="admin-message fade-up">
+            <h2>Administrator's Message</h2>
+            <h4>Sr. Naveena - Administrator, Carmel Hospital Aluva</h4>
+            <p>Dear beloved patients, families and community members,</p>
+            <p>As we strive to provide compassionate care to those in need we are reminded of Jesus' words "Love your neighbor as yourself." (Mk 12:31)</p>
+            <p>At Carmel Hospital we are committed to living out this commandment by serving our community with love, kindness, and respect. Our dedicated team of healthcare professionals and support staff are called to care for the whole person—body, mind, and spirit.</p>
+            <p>We believe that every individual who walks through our doors is a precious child of God, deserving of dignity, compassion, and exceptional care. We are honored to serve you and provide a safe, supportive environment for healing and recovery.</p>
+            <p>As we move ahead, we pray for God's guidance, wisdom, and blessing on our efforts. May our hospital be a beacon of hope, a refuge for the hurting, and a testament to the transformative power of love and compassion.</p>
+            <p>Thank you for entrusting us with your care. We're privileged to serve you. May God bless and guide us all.</p>
+        </div>
+
+        <!-- Vision & Mission Grid -->
+        <div class="mission-vision-grid fade-up">
+            <!-- Vision -->
+            <div class="mv-card">
+                <i class="fa-solid fa-eye mv-icon"></i>
+                <h3>Vision</h3>
+                <p>To provide Compassionate, dedicated and excellent health care to all regardless of Caste, Creed, Colour and financial status at par with international standard.</p>
+            </div>
+            
+            <!-- Quality Policy -->
+            <div class="mv-card">
+                <i class="fa-solid fa-award mv-icon"></i>
+                <h3>Quality Policy</h3>
+                <p>Committed to offering quality medical care to our patients in harmony with the best practices of medical ethics.</p>
+            </div>
+
+            <!-- Mission -->
+            <div class="mv-card" style="grid-column: span 2;">
+                <i class="fa-solid fa-bullseye mv-icon"></i>
+                <h3>Mission</h3>
+                <ul style="display: inline-block; text-align: left;">
+                    <li>Healing of the sick with holistic care at affordable cost.</li>
+                    <li>Equip the health professionals with knowledge, skill and values.</li>
+                    <li>Building of secure healthy communities.</li>
+                </ul>
+            </div>
+
+            <!-- Motto -->
+            <div class="mv-card motto">
+                <h3>Our Motto</h3>
+                <p>LOVE • SERVICE • LIFE • SACRIFICE</p>
+            </div>
+        </div>
+
+        <!-- We Care About You Section -->
+        <div class="care-section fade-up">
+            <h2 class="care-section-title">We Care About You</h2>
+            <div class="care-grid">
+                <!-- Embrace your Health -->
+                <div class="care-card">
+                    <h3>Embrace your Health</h3>
+                    <p>We are committed to providing exceptional healthcare services to all our patients. Our team of healthcare professionals comprises experienced and skilled doctors, nurses, and other medical staff who are dedicated to ensuring your well-being. We understand that each patient is unique, and we provide personalized care to meet their individual needs.</p>
+                </div>
+                
+                <!-- Primary Health Care -->
+                <div class="care-card">
+                    <h3>Primary Health Care</h3>
+                    <p>We understand the importance of primary health care in maintaining good health and preventing illnesses. Our team of healthcare professionals provides comprehensive primary care services including regular check-ups, screenings, immunizations, and chronic disease management to help you stay healthy.</p>
+                </div>
+
+                <!-- Achieving Better Health Care -->
+                <div class="care-card">
+                    <h3>Achieving Better Health Care</h3>
+                    <p>Our team is committed to providing you with the best possible care to help you achieve your health goals. We provide comprehensive medical services that are focused on preventing illness, managing chronic conditions, and promoting overall health and well-being with personalized treatment plans.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <a href="index.html" class="logo footer-logo">
+                    <img src="assets/landing/main_logo-1-scaled.png" alt="Carmel Hospital" class="nav-logo-img"> Carmel Hospital
+                </a>
+                <p>Providing the best possible care with love, service, life, and sacrifice. Your health is our priority.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="department.html">Departments</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="doctor.html">Our Doctors</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Opening Hours</h3>
+                <ul class="hours-list">
+                    <li>OP Consulting: <span>09.30AM - 01.00PM</span></li>
+                    <li>IP Visiting (Morn): <span>07.00AM - 09.00PM</span></li>
+                    <li>IP Visiting (Eve): <span>12.00PM - 09.00PM</span></li>
+                    <li>Registration: <span>07.30AM - 12.00PM</span></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-location-dot"></i> Ashokapuram, Aluva – 683101</li>
+                    <li><i class="fa-solid fa-phone"></i> 0484-2623594, 9188909863</li>
+                    <li><i class="fa-solid fa-envelope"></i> info@carmelhospital.org</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Carmel Hospital. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
